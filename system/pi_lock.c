@@ -27,7 +27,7 @@ pri16 getMaxPrio(pi_lock_t *l,pid32 p){
             hpri=proctab[iterator].prprio;
             hpid=iterator;
         }
-		iterator=queuetab[iterator].qnext;
+	    iterator=queuetab[iterator].qnext;
 	}
     if(hpri!=-1){
         uint32 lockN=l->lockNumber;
